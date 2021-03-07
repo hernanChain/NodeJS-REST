@@ -1,0 +1,13 @@
+@api = http://localhost:4000
+### READ ALL VIDEOS
+GET {{api}}/getVideos
+
+### CREATE VIDEO
+POST {{api}}/createVideo
+Content-Type: application/json
+ 
+{
+    "url":"https://www.youtube.com/watch?v=WWUoqu4RtHV0",
+    "description": "This video is about programming art",
+    "title": "Music for programming "
+}
