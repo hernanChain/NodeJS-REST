@@ -5,9 +5,21 @@ GET {{api}}/getVideos
 ### CREATE VIDEO
 POST {{api}}/createVideo
 Content-Type: application/json
- 
+
 {
-    "url":"https://www.youtube.com/watch?v=WWUoqu4RtHV0",
+    "title": "Music for programming ",
     "description": "This video is about programming art",
-    "title": "Music for programming "
+    "url":"https://www.youtube.com/watch?v=Fo3eCet0zvc",
+    "comments":[{"user":"Pepito Perez","body":"Buen video, pero no dejo los links"},
+              {"user":"Ruben Paez","body":"No me gusto"}],
+    "reactions":{"likes":20, "dislikes":1}
+}
+
+### UPDATE VIDEO
+PATCH  {{api}}/updateVideo/604953f81b2e091f0383c530
+Content-Type: application/json
+
+{
+    "reactions": {"likes":5, "dislikes":2},
+    "test":"test"
 }
