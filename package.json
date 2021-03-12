@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "npx ts-node-dev src/index.ts",
+    "prestart": "npm i --save-dev @types/express",
     "start": "tsc && node dist/index.js"
   },
   "repository": {
