@@ -17,10 +17,6 @@ const videoSchema = new Schema(
       trim: true,
       unique: true,
     },
-    comments: {
-      type: [{ user: String, body: String }],
-      trim: true,
-    },
     reactions: {
       likes: Number,
       dislikes: Number,
